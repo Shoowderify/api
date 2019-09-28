@@ -2,6 +2,12 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		    <script src="jquery.js"></script> 
+ <script> 
+    $(function(){
+      $("#includedContent").load("../../header.php"); 
+    });
+    </script>
 		<link rel="icon" type="image/png" href="./assets/icons/icon.png" sizes="16x16">
 		<link rel="stylesheet" type="text/css" href="./assets/style.css">
 		<link rel="stylesheet" type="text/css" href="../../header.css">
@@ -12,10 +18,7 @@
   <body>
 	<div class='container'>
 	<div class='juegos'>
-		<?php
-			$title='clash';
-			include "../../header.php";
-		?>
+		<div id="includedContent"></div>
 		<div class='formulario'>
 			<div class='tag'>
 				<form class='' action='./clash.php' method='post'>
